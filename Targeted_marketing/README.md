@@ -665,90 +665,90 @@ df_test.head()
   </thead>
   <tbody>
     <tr>
-      <th>509</th>
+      <th>267</th>
       <td>1</td>
-      <td>277</td>
-      <td>4</td>
+      <td>329</td>
+      <td>14</td>
+      <td>5</td>
+      <td>24</td>
       <td>2</td>
-      <td>12</td>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>1819</th>
+      <th>1672</th>
       <td>1</td>
-      <td>35</td>
+      <td>213</td>
       <td>14</td>
-      <td>1</td>
-      <td>14</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1967</th>
-      <td>1</td>
-      <td>288</td>
-      <td>16</td>
-      <td>1</td>
-      <td>16</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>1</td>
-      <td>242</td>
-      <td>6</td>
-      <td>4</td>
-      <td>16</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1835</th>
-      <td>1</td>
-      <td>87</td>
-      <td>6</td>
       <td>2</td>
-      <td>14</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1976</th>
+      <td>1</td>
+      <td>96</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1143</th>
+      <td>1</td>
+      <td>154</td>
+      <td>10</td>
+      <td>9</td>
+      <td>54</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1632</th>
+      <td>1</td>
+      <td>23</td>
+      <td>6</td>
+      <td>1</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -774,8 +774,8 @@ y_train.describe()
 
 
     count    1600.000000
-    mean        0.110625
-    std         0.313765
+    mean        0.103750
+    std         0.305031
     min         0.000000
     25%         0.000000
     50%         0.000000
@@ -793,14 +793,14 @@ y_test.describe()
 
 
 
-    count    400.000000
-    mean       0.100000
-    std        0.300376
-    min        0.000000
-    25%        0.000000
-    50%        0.000000
-    75%        0.000000
-    max        1.000000
+    count    400.00000
+    mean       0.12750
+    std        0.33395
+    min        0.00000
+    25%        0.00000
+    50%        0.00000
+    75%        0.00000
+    max        1.00000
     Name: Success, dtype: float64
 
 
@@ -817,7 +817,7 @@ len(X_train[mask])
 
 
 
-    21
+    23
 
 
 
@@ -861,11 +861,11 @@ df_train[['Gender', 'Success']].groupby('Gender').mean()
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.170213</td>
+      <td>0.142544</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0.085841</td>
+      <td>0.088287</td>
     </tr>
   </tbody>
 </table>
@@ -906,7 +906,7 @@ p.add_legend()
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x229316255c0>
+    <seaborn.axisgrid.FacetGrid at 0x1801ff8a2b0>
 
 
 
@@ -928,7 +928,7 @@ p.add_legend()
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x229316525c0>
+    <seaborn.axisgrid.FacetGrid at 0x1801ff9d6a0>
 
 
 
@@ -950,7 +950,7 @@ p.add_legend()
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x229316ce908>
+    <seaborn.axisgrid.FacetGrid at 0x180202c2b70>
 
 
 
@@ -972,7 +972,7 @@ p.add_legend()
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x229316ce630>
+    <seaborn.axisgrid.FacetGrid at 0x1802008b0b8>
 
 
 
@@ -1069,9 +1069,9 @@ DT.feature_importances_
 
 
 
-    array([0.        , 0.10885926, 0.55504539, 0.        , 0.04578631,
+    array([0.        , 0.12023164, 0.56875368, 0.        , 0.        ,
            0.        , 0.        , 0.        , 0.        , 0.        ,
-           0.29030904, 0.        , 0.        , 0.        , 0.        ,
+           0.31101468, 0.        , 0.        , 0.        , 0.        ,
            0.        ])
 
 
@@ -1106,13 +1106,13 @@ df_train['Prob'].describe()
 
 
     count    1600.000000
-    mean        0.110625
-    std         0.096140
-    min         0.017500
-    25%         0.031814
-    50%         0.075243
-    75%         0.150685
-    max         0.373494
+    mean        0.103750
+    std         0.087743
+    min         0.004032
+    25%         0.063269
+    50%         0.063269
+    75%         0.108014
+    max         0.358025
     Name: Prob, dtype: float64
 
 
@@ -1141,7 +1141,7 @@ max(profit,key=lambda e: e[1])
 
 
 
-    (0.08, 244250.0)
+    (0.07, 209781.25)
 
 
 
@@ -1158,7 +1158,7 @@ profit_calculator(confusion_matrix(df_test['Success'], y_pred))
 
 
 
-    200250.0
+    317625.0
 
 
 
@@ -1177,7 +1177,7 @@ m[1,1]/np.sum(m)
 
 
 
-    0.075
+    0.0975
 
 
 
@@ -1191,7 +1191,7 @@ false_buyers = len(df_test) - true_buyers
 
 
 
-    95000.0
+    231125.0
 
 
 
